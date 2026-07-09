@@ -1,5 +1,7 @@
 # 筆記翻新工坊: 用 Claude Code 把雜記變成互動網頁
 
+每個人手邊多少都有幾份隨手記下的筆記, 可能是讀書心得, 生活觀察, 或是像這裡示範的理財雜記. 這些內容通常很有價值, 卻因為格式鬆散而少有人願意重讀. 這個專案想說明的是, 不需要設計背景, 也不需要從零學習網頁開發, 只要善用 AI 工具, 就能把手邊已經存在的生活紀錄, 重新變成一頁值得分享的互動網頁. 從自己熟悉的愛好或日常筆記開始練習, 是認識 AI 協作能力最實際的第一步.
+
 一個最小示範, 說明如何用 Claude Code 的 frontend-design plugin, 把一份隨手寫的 Markdown 筆記, 重新設計成一頁式互動網頁.
 
 ## 專案簡介
@@ -7,12 +9,6 @@
 `認識股票.md` 是一份用 Markdown 格式寫的個人理財筆記, 內容鬆散, 段落順序也未經整理, 是典型的雜記草稿. 透過 Claude Code 呼叫 frontend-design plugin, 先重新編排內容架構與精簡文案, 再提出數種視覺風格讓使用者挑選, 最後產出 `認識股票.html`, 一個可直接雙擊在瀏覽器開啟的互動式網頁.
 
 這個資料夾保留了完整過程, 可以當成 Claude Code 實際操作的參考範例.
-
-## GitHub About 與 Topics
-
-About: 用 Claude Code frontend-design plugin, 把雜記 Markdown 轉成互動式網頁的最小示範.
-
-Topics: claude-code, demo, frontend-design, html, markdown
 
 ## 檔案結構
 
