@@ -8,6 +8,12 @@
 
 這個資料夾保留了完整過程, 可以當成 Claude Code 實際操作的參考範例.
 
+## GitHub About 與 Topics
+
+About: 用 Claude Code frontend-design plugin, 把雜記 Markdown 轉成互動式網頁的最小示範.
+
+Topics: claude-code, demo, frontend-design, html, markdown
+
 ## 檔案結構
 
 - `認識股票.md`: 原始筆記, Marp 投影片格式
