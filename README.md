@@ -8,12 +8,15 @@
 
 `認識股票.md` 是一份用 Markdown 格式寫的個人理財筆記, 內容鬆散, 段落順序也未經整理, 是典型的雜記草稿. 透過 Claude Code 呼叫 frontend-design plugin, 先重新編排內容架構與精簡文案, 再提出數種視覺風格讓使用者挑選, 最後產出 `認識股票.frontend-design.html`, 一個可直接雙擊在瀏覽器開啟的互動式網頁.
 
+為了對照差異, `認識股票.html` 是同一份筆記直接用 VS Code 的 Markdown Preview Extension 轉出的網頁, 沒有經過內容重新編排或視覺設計, 可以和 `認識股票.frontend-design.html` 並排比較, 感受兩者的落差.
+
 這個資料夾保留了完整過程, 可以當成 Claude Code 實際操作的參考範例.
 
 ## 檔案結構
 
 - `認識股票.md`: 原始筆記, Marp 投影片格式
 - `認識股票.frontend-design.html`: 由筆記重新設計產出的互動式網頁
+- `認識股票.html`: 用 VS Code Markdown Preview Extension 直接轉出的網頁, 作為對照組
 - `assets`: 筆記與網頁共用的圖片素材
 - `README.md`: 本文件, 含專案說明與一次完整的操作轉存紀錄
 
