@@ -6,18 +6,23 @@
 
 ## 專案簡介
 
-`認識股票.md` 是一份用 Markdown 格式寫的個人理財筆記, 內容鬆散, 段落順序也未經整理, 是典型的雜記草稿. 透過 Claude Code 呼叫 frontend-design plugin, 先重新編排內容架構與精簡文案, 再提出數種視覺風格讓使用者挑選, 最後產出 `認識股票.frontend-design.html`, 一個可直接雙擊在瀏覽器開啟的互動式網頁.
+`認識股票.md` 是一份用 Markdown 格式寫的個人理財筆記, 內容鬆散, 段落順序也未經整理, 是典型的雜記草稿. 透過 Claude Code 呼叫 frontend-design plugin, 先重新編排內容架構與精簡文案, 再提出數種視覺風格讓使用者挑選, 最後產出 `index.html`, 一個可直接雙擊在瀏覽器開啟的互動式網頁.
 
-為了對照差異, `認識股票.html` 是同一份筆記直接用 VS Code 的 Markdown Preview Extension 轉出的網頁, 沒有經過內容重新編排或視覺設計, 可以和 `認識股票.frontend-design.html` 並排比較, 感受兩者的落差.
+為了對照差異, `認識股票.html` 是同一份筆記直接用 VS Code 的 Markdown Preview Extension 轉出的網頁, 沒有經過內容重新編排或視覺設計, 可以和 `index.html` 並排比較, 感受兩者的落差.
 
 這個資料夾保留了完整過程, 可以當成 Claude Code 實際操作的參考範例.
+
+在原本的想法上, 這個示範後來又往前走了一步: 把產出的互動網頁進一步優化質感與風格, 再加上 manifest 和 service worker, 變成一個可以在 iPhone 上用 Safari 加到主畫面的 PWA, 開起來像一個獨立的 App, 也能離線瀏覽已經看過的內容. 頁面透過 GitHub Pages 部署, 線上可直接開啟: https://alleninTaipei.github.io/messy-notes-frontend-design-demo/
 
 ## 檔案結構
 
 - `認識股票.md`: 原始筆記, Marp 投影片格式
-- `認識股票.frontend-design.html`: 由筆記重新設計產出的互動式網頁
+- `index.html`: 由筆記重新設計產出的互動式網頁, 已優化為可安裝的 PWA, 由 GitHub Pages 以 main 分支 root 部署
 - `認識股票.html`: 用 VS Code Markdown Preview Extension 直接轉出的網頁, 作為對照組
-- `assets`: 筆記與網頁共用的圖片素材
+- `manifest.json`: PWA 設定, 定義名稱, 圖示與 standalone 顯示模式
+- `service-worker.js`: 快取網頁, 圖示與圖片, 支援離線瀏覽
+- `assets`: 筆記與網頁共用的圖片素材, `assets/icons` 為 PWA 圖示
+- `scripts/generate_icons.py`: 產生 `assets/icons` 圖示的腳本
 - `README.md`: 本文件, 含專案說明與一次完整的操作轉存紀錄
 
 ## Claude Code plugins
