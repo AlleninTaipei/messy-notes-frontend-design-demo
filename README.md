@@ -12,7 +12,7 @@
 
 這個資料夾保留了完整過程, 可以當成 Claude Code 實際操作的參考範例.
 
-在原本的想法上, 這個示範後來又往前走了一步: 把產出的互動網頁進一步優化質感與風格, 再加上 manifest 和 service worker, 變成一個可以在 iPhone 上用 Safari 加到主畫面的 PWA, 開起來像一個獨立的 App, 也能離線瀏覽已經看過的內容. 頁面透過 GitHub Pages 部署, 線上可直接開啟: https://alleninTaipei.github.io/messy-notes-frontend-design-demo/
+在原本的想法上, 這個示範後來又往前走了一步: 把產出的互動網頁進一步優化質感與風格, 再加上 manifest 和 service worker, 變成一個可以在 iPhone 上用 Safari 加到主畫面的 PWA, 開起來像一個獨立的 App, 也能離線瀏覽已經看過的內容. 頁面透過 GitHub Pages 部署, 線上可直接開啟: https://allenintaipei.github.io/messy-notes-frontend-design-demo/
 
 ## 檔案結構
 
