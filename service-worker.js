@@ -1,9 +1,8 @@
-const CACHE_NAME = '股票存摺-v2';
+const CACHE_NAME = '股票存摺-v3';
 const APP_SHELL = [
   './index.html',
   './manifest.json',
   './assets/buffeet.jpg',
-  './assets/stockjoke.jpg',
   './assets/icons/icon-192.png',
   './assets/icons/icon-512.png',
   './assets/icons/icon-180.png'

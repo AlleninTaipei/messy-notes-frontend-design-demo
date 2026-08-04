@@ -305,34 +305,6 @@
   .checklist li.checked .box::after{ content:'✓'; }
   .checklist li.checked span.txt{ color:var(--ink-soft); text-decoration:line-through; }
 
-  .note-trigger{
-    margin-top:36px;
-    background:none; border:1px dashed var(--gold);
-    color:var(--ink-soft);
-    font-family:var(--sans);
-    padding:13px 16px;
-    min-height:44px;
-    border-radius:2px;
-    cursor:pointer;
-    font-size:0.85rem;
-    transition:color 0.25s ease, border-color 0.25s ease;
-  }
-  .note-trigger:hover{ color:var(--ink-blue); border-color:var(--ink-blue); }
-  .note-reveal{
-    margin-top:16px;
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0.5s ease;
-  }
-  .note-reveal.open{ max-height:400px; }
-  .note-reveal img{
-    max-width:100%;
-    border:1px solid var(--gold);
-    transform:rotate(-1.5deg);
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-  }
-  .note-reveal figcaption{ font-size:0.75rem; color:var(--ink-soft); margin-top:8px; }
-
   footer{
     text-align:center;
     padding:40px 24px 60px;
@@ -520,11 +492,6 @@
       <li><span class="box"></span><span class="txt">是強者更強, 弱者更弱</span></li>
       <li><span class="box"></span><span class="txt">只鎖定領導股, 不買落後股</span></li>
     </ul>
-    <button class="note-trigger" id="noteBtn" aria-expanded="false">夾在存摺裡的一張紙條</button>
-    <figure class="note-reveal" id="noteReveal">
-      <img src="assets/stockjoke.jpg" alt="股市追高殺低心情寫照" width="1245" height="686" loading="lazy" decoding="async">
-      <figcaption>看過就好, 別當真的做</figcaption>
-    </figure>
   </section>
 
 </main>
@@ -611,14 +578,6 @@
     li.addEventListener('keydown', function(ev){
       if(ev.key === 'Enter' || ev.key === ' '){ ev.preventDefault(); toggle(); }
     });
-  });
-
-  // note reveal
-  var noteBtn = document.getElementById('noteBtn');
-  var noteReveal = document.getElementById('noteReveal');
-  noteBtn.addEventListener('click', function(){
-    var open = noteReveal.classList.toggle('open');
-    noteBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 
   // PWA install support (requires https or localhost; silently no-ops on file://)
