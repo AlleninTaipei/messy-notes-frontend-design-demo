@@ -550,6 +550,7 @@
     }
 
     var amount = Math.round(progress * TARGET / 1000) * 1000;
+    if(amount >= 994000){ amount = TARGET; }
     amountBadge.textContent = 'NT$ ' + amount.toLocaleString('en-US');
   }
   document.addEventListener('scroll', onScroll, {passive:true});
